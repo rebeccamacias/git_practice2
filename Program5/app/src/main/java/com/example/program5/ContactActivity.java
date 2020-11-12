@@ -22,7 +22,7 @@ public class ContactActivity extends BaseActivity implements ContactPresenter.MV
 
 
         Intent intent = getIntent();
-        int id = intent.getIntExtra("id", 1);
+        long id = intent.getLongExtra("id", 1);
         presenter.loadContact(id);
 
         contactPageLayout = new LinearLayout(this);

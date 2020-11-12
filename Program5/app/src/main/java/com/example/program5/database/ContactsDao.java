@@ -18,5 +18,5 @@ public interface ContactsDao {
     long insert(Contact contact);
 
     @Query("SELECT * FROM Contact WHERE id = :id LIMIT 1")
-    Contact getContact(int id);
+    Contact getContact(long id);
 }

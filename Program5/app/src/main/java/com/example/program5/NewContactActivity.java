@@ -24,18 +24,22 @@ public class NewContactActivity extends BaseActivity implements NewContactPresen
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.setMargins(48, 24, 48, 24);
 
+        //name
         AppCompatTextView nameTextView = new AppCompatTextView(this);
         nameTextView.setText("Name");
         AppCompatEditText nameEditText = new AppCompatEditText(this);
 
+        //phone
         AppCompatTextView phoneTextView = new AppCompatTextView(this);
         phoneTextView.setText("Number");
         AppCompatEditText phoneEditText = new AppCompatEditText(this);
 
+        //email
         AppCompatTextView emailTextView = new AppCompatTextView(this);
         emailTextView.setText("Email");
         AppCompatEditText emailEditText = new AppCompatEditText(this);
 
+        //save button
         AppCompatButton button = new AppCompatButton(this);
         button.setText("Save");
         button.setOnClickListener(view -> {

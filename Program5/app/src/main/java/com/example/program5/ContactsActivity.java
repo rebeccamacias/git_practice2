@@ -37,6 +37,7 @@ public class ContactsActivity extends BaseActivity implements ContactsPresenter.
 
         contactsLayout = new LinearLayout(this);
         contactsLayout.setOrientation(LinearLayout.VERTICAL);
+        contactsLayout.setLayoutParams(params);
 
         ScrollView scrollView = new ScrollView(this);
         scrollView.addView(contactsLayout);
